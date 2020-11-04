@@ -35,8 +35,10 @@ ul
 .top {
     height: 30px;
     line-height: 30px;
-    background-color: #333;
-    background-image:linear-gradient(to bottom,  rgba(133, 130, 130, 0.6),  #333, #333);
+    background-color: rgb(243, 57, 57);
+    background-image:linear-gradient(to bottom,  rgba(133, 130, 130, 0.6),  #700, #700);
+
+
     color: #fff;
     justify-content: space-between;
     overflow: hidden;
@@ -65,35 +67,43 @@ ul
     display: inline-block;
     width: 90px;
     border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px
 }
 .top-btn button:first-child
 {
-    background-color: rgba(119, 0, 0, 0.5);
+    background-color:rgb(233, 114, 114);
+    background-image:linear-gradient(to bottom,  rgba(133, 130, 130, 0.5),  #700, #700);
     color: white;
 }
 .top-btn button:last-child
 {
-    background-color: rgba(20, 61, 85, 0.7);
+    background-color: #96cdec;
+    background-image:linear-gradient(to bottom,  rgba(133, 130, 130, 0.5),  #143D55, #143D55);
     color: white;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
     box-shadow: 3px 0px 3px rgb(43, 43, 43);
+    transition: all 400ms ;
     
 }
 /* .top-btn button:first-child:hover
 {
     background-color: rgba(119, 0, 0, 1);
 }
+*/
 .top-btn button:last-child:hover
 {
     
-    background-color: rgba(20, 61, 85, 1);
-} */
+    background-color: #a86b1b !important;
+    background-image: linear-gradient(to bottom,  rgba(255, 255, 255, 0.3),  rgba(255, 144, 0.3), rgba(255, 144, 0.3)) !important;;
+
+} 
 
 .top-ad button
 {
-    background-color: #b5f5a0;
-    background-image:linear-gradient(to bottom,  rgba(255, 255, 255, 0.3),   #41B419,  #41B419);
+    background-color: orange;
+    background-image: linear-gradient(to bottom,  rgba(255, 255, 255, 0.3),  rgba(255, 144, 0.3), rgba(255, 144, 0.3)) ;
     padding: 10px 35px 10px 25px;
     box-shadow: -2px 0px 3px #333;
     border: none;
@@ -102,7 +112,6 @@ ul
     top: -2px;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
-
     background-size: 290px;
 }
 
@@ -139,8 +148,8 @@ ul
 .menu
 {
     height: 30px;
-    background-color: #143D55;
-    background-image:linear-gradient(to bottom,  rgba(255, 255, 255, 0.3),   #143D55,  #143D55);
+    background-color: rgb(243, 57, 57);
+    background-image:linear-gradient(to bottom,  rgba(133, 130, 130, 0.6),  #700, #700);
 
 }
 
@@ -252,6 +261,11 @@ ul
     background-image:linear-gradient(to bottom,  rgba(255, 255, 255, 0.3),   rgb(36, 72, 109),  rgb(36, 75, 114));
     box-shadow: 1px 2px 9px rgb(128, 127, 127);
 }
+.search-bar .search button:hover
+{
+    background-color: orange;
+    background-image: linear-gradient(to bottom,  rgba(255, 255, 255, 0.3),  rgba(255, 144, 0.3), rgba(255, 144, 0.3)) ;
+}
 
 .sign
 {
@@ -283,9 +297,6 @@ ul
     top: 3px;
     left: 90px;
 }
-
-
-
 
 
 .slider
@@ -323,8 +334,8 @@ ul
     padding: 0 15px;
     height: 35px;
     color: white;
-    background-color: #73cc55;
-    background-image: linear-gradient(to bottom,  rgba(255, 255, 255, 0.3),   rgba(57, 160, 23, 0.7),  rgba(57, 160, 23, 0.7)) !important;
+    background-color: #a86b1b !important;
+    background-image: linear-gradient(to bottom,  rgba(255, 255, 255, 0.3),  rgba(255, 144, 0.3), rgba(255, 144, 0.3)) ;
     box-shadow: 0px 2px 4px rgba(131, 124, 124, 0.5);
     border: 1px outset #999;
     border-radius: 10px;
@@ -336,8 +347,8 @@ ul
 }
 .slider button:hover, .ad-btn:hover
 {
-    background-color: #a86b1b !important;
-    background-image: linear-gradient(to bottom,  rgba(255, 255, 255, 0.3),  rgba(255, 144, 0.3), rgba(255, 144, 0.3)) !important;;
+    background-color: #369;
+    background-image:linear-gradient(to bottom,  rgba(255, 255, 255, 0.8),   rgb(36, 72, 109),  rgb(36, 75, 114));
 
 
 }
@@ -356,8 +367,10 @@ ul
 
 .hover:hover
 {
-    background-color: #f0b262 !important;
-    background-image:linear-gradient(to bottom,  rgba(255, 255, 255, 0.3),   #ff9000,  #ff9000) !important;
+    /* background-color: #f0b262 !important;
+    background-image:linear-gradient(to bottom,  rgba(255, 255, 255, 0.3),   #ff9000,  #ff9000) !important; */
+    background-color: #96cdec;
+    background-image: linear-gradient(to bottom, rgba(133, 130, 130, 0.5), #143D55, #143D55);
     color: white !important;
 }
 
@@ -822,7 +835,7 @@ dl > dd > a
 
 .text-danger
 {
-    color: red;
+    color: rgb(10, 139, 10);
 }
 
 /* //////////////////////////////////////////////////////// Comment */
