@@ -80,7 +80,7 @@ ul
     box-shadow: 3px 0px 3px rgb(43, 43, 43);
     
 }
-.top-btn button:first-child:hover
+/* .top-btn button:first-child:hover
 {
     background-color: rgba(119, 0, 0, 1);
 }
@@ -88,11 +88,12 @@ ul
 {
     
     background-color: rgba(20, 61, 85, 1);
-}
+} */
 
 .top-ad button
 {
-    background-color: rgba(65, 180, 25, 0.6);
+    background-color: #b5f5a0;
+    background-image:linear-gradient(to bottom,  rgba(255, 255, 255, 0.3),   #41B419,  #41B419);
     padding: 10px 35px 10px 25px;
     box-shadow: -2px 0px 3px #333;
     border: none;
@@ -101,15 +102,20 @@ ul
     top: -2px;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
-    background-image: url('images/gen.webp');
-    background-position-x: 120px;
-    background-position-y: 2px;
+
     background-size: 290px;
 }
 
-.top-ad button:hover
+.top-ad button::after
 {
-    background-color: rgba(65, 180, 25, 1);
+    display: inline-block;
+    content: '';
+    width: 20px;
+    height: 32px;
+    background-image: url('images/gen.webp');
+    position: absolute;
+    top: 2px;
+    right: 5px;
 }
 
 .logo-area
@@ -151,10 +157,17 @@ ul
 {
     color: white;
     text-decoration: none;
-    width: 100%;
+    /* width: 100%; */
     padding: 6px 10px 6px 40px;
     display: inline-block;
     transition: all 200ms;
+}
+
+.m-6
+{
+    /* padding: 0 5px !important; */
+    width: 100px;
+    padding-left: 20px !important;
 }
 
 .menu ul li
@@ -307,14 +320,26 @@ ul
 {
     display: inline-block;
     margin-top: 10px;
-    padding: 10px 15px;
+    padding: 0 15px;
+    height: 35px;
     color: white;
-    background-color: #c5f1b6;
-    background-image:linear-gradient(to bottom,  rgba(255, 255, 255, 0.3),   #41B419,  #41B419);
-    box-shadow: 0px 2px 7px rgb(131, 124, 124);
+    background-color: #73cc55;
+    background-image: linear-gradient(to bottom,  rgba(255, 255, 255, 0.3),   rgba(57, 160, 23, 0.7),  rgba(57, 160, 23, 0.7)) !important;
+    box-shadow: 0px 2px 4px rgba(131, 124, 124, 0.5);
     border: 1px outset #999;
     border-radius: 10px;
-    transition: all 300ms;
+    transition: all 400ms;
+}
+.ad-btn
+{
+    transition: all 400ms ;
+}
+.slider button:hover, .ad-btn:hover
+{
+    background-color: #a86b1b !important;
+    background-image: linear-gradient(to bottom,  rgba(255, 255, 255, 0.3),  rgba(255, 144, 0.3), rgba(255, 144, 0.3)) !important;;
+
+
 }
 
 .hilight
@@ -648,6 +673,8 @@ footer
 {
     color: orange;
     padding: 10px 20px;
+    border-left: 1px solid white;
+
 }
 
 footer > div > ul > li, dl > dd, dl > dt
@@ -672,10 +699,10 @@ footer  a:hover
     background-color: white;
 }
 
-footer > div
+/* footer > div
 {
     border-left: 1px solid white;
-}
+} */
 
 .classifieds > ul > li > a, dl > dt > a
 {
@@ -686,6 +713,10 @@ footer > div
 .classifieds > ul > li > a::before
 {
     background-image: url(images/gen.webp);
+}
+footer  ul > li, footer dt, footer dd
+{
+    border-left: 1px solid white;
 }
 .mourjan > ul > li > a
 {
@@ -786,6 +817,12 @@ dl > dd > a
 .mt-4
 {
     margin-top: 40px;
+}
+
+
+.text-danger
+{
+    color: red;
 }
 
 /* //////////////////////////////////////////////////////// Comment */
