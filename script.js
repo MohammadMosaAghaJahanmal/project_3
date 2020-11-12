@@ -26,3 +26,16 @@ function changed(e)
     link.href = "light.css"
     i = !i;
 }
+
+
+window.onresize = (e) =>
+{
+    if(window.innerWidth <= 845)
+    {
+        const boxes = document.querySelectorAll("input[type=checkbox]");
+        for (const box of boxes) {
+            box.checked = false
+        }
+    }
+
+}

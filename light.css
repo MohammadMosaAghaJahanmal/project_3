@@ -414,14 +414,54 @@ ul
 
 }
 
-/* .apartments.grid-policy > div */
-/* { */
-    /* background-color: red !important; */
-/* } */
-/* .grid-policy > div:not(.ads-right) */
-/* { */
-    /* overflow: hidden; */
-/* } */
+.grid-policy.landing
+{
+    display: grid;
+    grid-template-areas: 'real jobs misc services ads'
+    'cars cars cars services ads';
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto auto;
+    column-gap: 15px;
+    row-gap: 15px;
+}
+
+.grid-policy.landing > div 
+{
+    overflow: hidden;
+}
+.real.landing
+{
+    grid-area: real;
+}
+.jobs.landing
+{
+    grid-area: jobs;
+    
+}
+.misc.landing
+{
+    grid-area: misc;
+    
+}
+.services.landing
+{
+    grid-area: services;
+    
+}
+.ads.landing
+{
+    grid-area: ads;
+    
+}
+.ads img
+{
+    width: 100%;
+}
+.cars.landing
+{
+    grid-area: cars;
+    
+}
 .services
 {
     overflow: hidden;
@@ -1715,6 +1755,93 @@ dl > dd > a
     position: absolute;
     /* top: -10px; */
 }
+/* //////////////////////////////////////////////////////// */
+._reasestate
+{
+    position: absolute;
+    background-color:var(--bg-new-light);
+    overflow: hidden;
+    z-index: 9999999;
+    top: 30px;
+    width: 100%;
+    height: 0;
+    height: 0;
+    transition: all 300ms;
+    visibility: hidden;
+    z-index: 999999999;
+}
+
+#reasestate:checked ~ .realestate-menu, #cars:checked ~ .cars-menu, #jobs:checked ~ .jobs-menu, #services:checked ~ .services-menu, #misc:checked ~ .misc-menu
+{
+    height: 210px;
+    visibility: visible;
+}
+
+#reasestate:checked ~ .menu-ul .m-1
+{
+    background-color: #96cdec;
+    background-image: linear-gradient(to bottom, rgba(133, 130, 130, 0.5), #143D55, #143D55);
+}
+
+#cars:checked ~ .menu-ul .m-2
+{
+    background-color: #96cdec;
+    background-image: linear-gradient(to bottom, rgba(133, 130, 130, 0.5), #143D55, #143D55);
+}
+#jobs:checked ~ .menu-ul .m-3
+{
+    background-color: #96cdec;
+    background-image: linear-gradient(to bottom, rgba(133, 130, 130, 0.5), #143D55, #143D55);
+}
+#services:checked ~ .menu-ul .m-4
+{
+    background-color: #96cdec;
+    background-image: linear-gradient(to bottom, rgba(133, 130, 130, 0.5), #143D55, #143D55);
+}
+#misc:checked ~ .menu-ul .m-5
+{
+    background-color: #96cdec;
+    background-image: linear-gradient(to bottom, rgba(133, 130, 130, 0.5), #143D55, #143D55);
+}
+
+.top-list
+{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.top-list > div 
+{
+    border-bottom: 1px solid white;
+}
+.top-list > div > a
+{
+    color: var(--bg-secondary);
+    display: inline-block;
+    padding: 10px;
+    padding-left: 50px;
+    position: relative;
+    
+}
+.ic::before
+{
+    content: ' ';
+    /* background-color: red; */
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+.top-list > div > a::before
+{
+    background-image: url('./images/service.webp');
+}
+.top-list > div > a:hover
+{
+    text-decoration: underline;
+}
+
 /* //////////////////////////////////////////////////////// Comment */
 @media all and (max-width: 1650px)
 {
@@ -1777,6 +1904,16 @@ dl > dd > a
     grid-template-columns: repeat(2, 1fr);
     
     }
+    
+    .grid-policy.landing
+    {
+        display: grid;
+        grid-template-areas: 'real jobs misc '
+        'cars cars services'
+        '. . ads'
+        ;
+        grid-template-columns: repeat(3, 1fr);
+    }
     .content-data
     {
         grid-column: 1 / -1 !important;
@@ -1799,15 +1936,30 @@ dl > dd > a
         grid-row: 1 / 3;
         
     }
+
     
+    #reasestate:checked ~ .realestate-menu, #cars:checked ~ .cars-menu, #jobs:checked ~ .jobs-menu, #services:checked ~ .services-menu, #misc:checked ~ .misc-menu
+    {
+        height: 250px;
+        visibility: visible;
+    }
+    #reasestate:checked ~ .realestate-menu
+    {
+        height: 290px;
+    }
     
 }
+
 
 @media all and (max-width: 1162px)
 {
     .ads-right
     {
         top: -1100px;
+    }
+    footer.landing
+    {
+        grid-template-columns: repeat(3, auto);
     }
 }
 @media all and (max-width: 1002px)
@@ -1827,7 +1979,7 @@ dl > dd > a
     {
         grid-column: 1 / span 4 !important;
     }
-    .services
+    .a-apartments > .services
     {
         grid-row: 3 / 3;
         grid-column: 1 / 3;
@@ -1893,10 +2045,6 @@ dl > dd > a
     }
 
 
-}
-
-@media all and (max-width: 770px)
-{
     .menu
     {
         min-height: 0;
@@ -1907,8 +2055,8 @@ dl > dd > a
         grid-template-columns: 1fr;
         height: 0;
         margin-top: 30px;
-        background-color:rgb(233, 114, 114);
-        background-image:linear-gradient(to bottom,  rgba(133, 130, 130, 0.5),  #700, #700);
+        background-color: rgb(243, 57, 57);
+        background-image:linear-gradient(to bottom,  rgba(133, 130, 130, 0.6),  #700, #700);
         position: relative;
         z-index: 999;
         transition: 300ms all;
@@ -1943,6 +2091,28 @@ dl > dd > a
         color: red;
         height: 165px;
     }
+    footer.landing
+    {
+        grid-template-columns: repeat(2, auto);
+    }
+    ._reasestate
+    {
+        display: none;
+    }
+}
+
+@media all and (max-width: 770px)
+{
+    .grid-policy.landing
+    {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 'cars cars'
+        'real  services'
+        'misc services'
+        'jobs services'
+        'ads services';
+    }
+
 }
 @media all and (max-width: 550px)
 {
@@ -1986,5 +2156,23 @@ dl > dd > a
         width: 100%;
         padding-right: 0 !important;
         padding-left: 0 !important;
+    }
+    footer.landing
+    {
+        grid-template-columns: 1fr !important;
+    }
+    .grid-policy.landing
+    {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 'cars'
+        'real'
+        'misc'
+        'jobs'
+        'services'
+        'ads';
+    }
+    .slider
+    {
+        background-size: cover;
     }
 }
