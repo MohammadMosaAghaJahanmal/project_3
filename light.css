@@ -2468,7 +2468,9 @@ aside ul li a
 .post-content-area
 {
     padding: 20px;
+    display: grid;
 }
+
 .post-content-area p
 {
     margin: 30px 0;
@@ -2517,7 +2519,303 @@ aside ul li a
     background-image: linear-gradient(to bottom, rgba(133, 130, 130, 0.5), #143D55, #143D55) !important;
     color: white !important;
 }
+/* //////////////////////////////////////////////////// account */
 
+.account-form
+{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap: 10px;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+.account-form form
+{
+    display: grid;
+}
+
+.account-form form > div
+{
+    display: grid;
+    border-bottom: 1px solid gray;
+    height: 30px;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.account-form form > div > :first-child
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    padding: 7px 0;
+}
+.account-form form > div > :first-child > button:hover
+{
+    text-decoration: underline;
+}
+.account-form form > div > :first-child > button
+{
+    margin-left: auto;
+    color: blue;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.account-form form > div > :first-child > p
+{
+    font-size: 14px;
+}
+.account-labels
+{
+    font-weight: bold;
+}
+.account-labels + p
+{
+    color: gray;
+}
+
+.account-form form > div > :last-child:not(._email)
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.d-none
+{
+    display: none;
+}
+
+.d-block
+{
+    display: block;
+}
+
+._lan_ select, ._name_ input
+{
+    padding: 5px;
+}
+.account-input-controllers {
+    
+    position: absolute;
+    top: 3px;
+    left: 40%;
+}
+.checkboxes-alert
+{
+    display: grid;
+    margin-bottom: 20px;
+}
+
+.btns_ >  button
+{
+    margin-bottom: 15px;
+}
+.btns_ >  button
+{
+    padding: 7px 20px;
+    display: inline-block;
+    border: 1px outset #999;
+    border-radius: 10px;
+    background-color: rgb(71, 155, 238);
+    background-image: linear-gradient(to bottom,  rgba(255, 255, 255, 0.3),   #369,  #369);
+    color: white;
+    box-shadow: 0px 2px 3px #333;
+}
+.btns_ >  button:last-child
+{
+    background-color: #ff2929;
+    background-image: linear-gradient(to bottom,  rgba(255, 255, 255, 0.3),   #e12222,  #e12222);
+    margin-left: 20px;
+}
+
+
+.account-signins
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin-left: 50px;
+    
+}
+.account-signins > button
+{
+    border: 1px outset #999;
+    color: white;
+    display: inline-block;
+    background-color: rgb(128, 128, 128);
+    background-image: linear-gradient(to bottom,  rgba(255, 255, 255, 0.3),   #333,  #333);
+    padding: 9px 65px;
+    border-radius: 10px;
+    position: relative;
+    margin-top: 30px ;
+
+}
+
+span.apple
+{
+    display: inline-block;
+}
+
+span.apple::before, span.apple::after, span.up::before, span.up::after
+{
+    display: inline-block;
+    position: absolute;
+    content:  '';
+    width: 25px;
+    height: 30px;
+    background-position: center;
+    top: 0;
+}
+span.apple::before, span.apple::after
+{
+    background-image: url('./images/apple.webp');
+}
+span.up::before, span.up::after
+{
+    background-image: url('./images/i_up.webp');
+}
+span.up::before
+{
+    left: 40px;
+    top: 1px;
+}
+span.up::after
+{
+    right: 38px;
+    top: 1px;
+}
+span.apple::before
+{
+    left: 10px;
+}
+span.apple::after
+{
+    right: 10px;
+}
+
+._alert
+{
+    display: grid;
+    grid-template-columns: 1fr auto !important;
+    justify-content: space-between;
+}
+
+.justify-s-center
+{
+    justify-self: center;
+}
+
+/* /////////////////////////////////////////// how to */
+.simple-text
+{
+    font-size: 16px !important;
+    line-height: 25px;
+}
+.simple-text span
+{
+    display: inline-block;
+    position: relative;
+    margin: 0 12px;
+}
+.simple-text span::before
+{
+    content: ' ';
+    display: inline-block;
+    /* background-color: #e12222; */
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -20px;
+    left: -14px;
+    background-image: url('./images/gen.webp');
+    background-position: 0px -207px;
+
+}
+
+.gold-content
+{
+    display: grid;
+    grid-template-columns: auto;
+}
+.gold-content > div 
+{
+    background-color: #ececec;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 7px;
+}
+.simple-content ul 
+{
+    list-style: decimal;
+    padding-left: 40px;
+    width: 350px;
+}
+.simple-content ul > li
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: start;
+    position: relative;
+    margin: 5px 0;
+}
+.simple-content ul > li::before
+{
+    content: '•';
+    display: inline-block;
+    position: absolute;
+    left: -20px;
+    top: 0px;
+    font-size: 14px;
+    color: gray;
+}
+/* .post-content-area img
+{
+    width: fit-content;
+    object-fit: cover;
+} */
+.equal-to
+{
+    justify-self: center;
+}
+
+.gold-note
+{
+    border-bottom: 1px solid  var(--bg-light-blue);
+    padding-bottom: 20px;
+}
+.gold-note > ul
+{
+    padding-left: 20px;
+    list-style-type: disc;
+}
+.text-center
+{
+    text-align: center;
+}
+.credit-card
+{
+    margin-bottom: 20px;
+}
+.credit-card > img
+{
+    max-width: 350px;
+}
+.credit-card.appsw > img
+{
+    /* max-width: fit-content; */
+    max-width: 400px;
+    min-width: 200px;
+}
+.quides
+{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-around;
+}
 /* //////////////////////////////////////////////////////// Comment */
 @media all and (max-width: 1650px)
 {
@@ -2737,6 +3035,27 @@ aside ul li a
     }
 }
 
+@media all and (max-width: 870px)
+{
+    .account-form
+    {
+        grid-template-columns: 1fr;
+        margin-bottom: 30px;
+        margin-top: 15px;
+    }
+    .account-signins
+    {
+        margin: 0;
+        margin-top: 30px;
+    }
+    .account-input-controllers {
+    
+        left: 30%;
+        top: 10px;
+    }
+    
+    
+}
 @media all and (max-width: 845px)
 {
 
@@ -2858,6 +3177,11 @@ aside ul li a
     {
         flex-direction: column;
         height: 150px;
+    }
+    .stat.buying-gold
+    {
+        
+        height: 89px;
     }
     .buying-gold > div
     {
