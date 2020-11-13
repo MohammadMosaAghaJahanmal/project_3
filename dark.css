@@ -2808,6 +2808,8 @@ span.apple::after
     color: var(--bg-light);
 }
 
+/* ////////////////////////////////////////////////////// fixing wishlist */
+
 
 /* //////////////////////////////////////////////////////// Comment */
 @media all and (max-width: 1650px)
@@ -2975,7 +2977,7 @@ span.apple::after
     }
     .a-fav.signup-main
     {
-        grid-template-columns: repeat(1, 1fr) !important;
+        grid-template-columns: repeat(1, auto) !important;
         height: 700px;        
         justify-content: center;
         justify-items: center;
@@ -3268,4 +3270,70 @@ span.apple::after
     {
         margin-right: 0;
     }
+    .img-fave > img
+    { 
+        max-width: 320px;
+    }
+    footer.apartments
+    {
+        grid-template-columns: 1fr !important;
+    }
+    .yello-card
+    {
+        grid-column: 1 / 2;
+    }
+    .search-bar .search input
+    {
+        width: 100% !important;
+    }
+    .self-form, .third-form
+    {
+        width: 100% !important;
+    }
+    .dash-card
+    {
+        width: 100% !important;
+    }
+    .px-auto
+    {
+        padding-right: 1%;
+        padding-left: 1%;
+    }
+    .mx-auto
+    {
+        margin-right: 1%;
+        margin-left: 1%;
+    }
+    .appsw > img, .credit-card > img
+    {
+        max-width: 300px !important;
+        min-width: 220px !important;
+    }
+    .simple-content ul 
+    {
+        max-width: 240px !important;
+    }
+    .quides > img
+    {
+        max-width: 100px !important;
+        min-width: 100px !important;
+    }
+    .post-content-area
+    {
+        padding: 0 !important;
+    }
+    .notice.signup input
+    {
+        width: 80%;
+    }
+    .aside
+    {
+        width: 320px;
+        margin-top: 100px;
+    }
+    .a-fav.signup-main
+    {
+        height: 900px;      
+    }
+    
 }
