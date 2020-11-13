@@ -2729,7 +2729,7 @@ span.apple::after
 }
 .gold-content > div 
 {
-    background-color: #ececec;
+    background-color: var(--bg-blue-gray);
     font-size: 14px;
     border-radius: 5px;
     padding: 7px;
@@ -2801,6 +2801,11 @@ span.apple::after
     display: grid;
     grid-template-columns: repeat(2, auto);
     justify-content: space-around;
+}
+
+.post-content-area
+{
+    color: var(--bg-light);
 }
 
 
