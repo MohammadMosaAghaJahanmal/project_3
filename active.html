@@ -200,7 +200,7 @@
             <div class="dash-menu">
                 <ul>
                     <li><a href="#" class="f-1"></a></li>
-                    <li><a href="#" class="f-2"></a></li>
+                    <li><a href="#" class="f-2 active"></a></li>
                     <li><a href="#" class="f-3"></a></li>
                     <li><a href="#" class="f-4"></a></li>
                     <li><a href="#" class="f-5"></a></li>
@@ -208,82 +208,30 @@
                 </ul>
             </div>
         </div>
-
-        <div class="account-form">
-            <form>
-                <div class="language">
-                    <div class="_lan">
-                        <p class="account-labels">Language</p>
-                        <p class="titles">English</p>
-                        <button type="button" class="edit_btn language_">edit</button>
-                    </div>
-                    <div class="_lan_">
-                        <select  class="to-top">
-                            <option value="English">English</option>
-                        </select>
-                        <div class="btns_">
-                            <button type="button" class="hover">Save Changes</button>
-                            <button type="button" class="cancel hover">Cancel</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="name">
-                    <div class="_name">
-                        <p class="account-labels">Name</p>
-                        <p class="titles">Ahmad</p>
-                        <button type="button" class="edit_btn name_">edit</button>
-                    </div>
-                    <div class="_name_">
-                        <input type="text" placeholder="Ahmad" class="to-top">
-                        <div class="btns_">
-                            <button type="button" class="hover">Save Changes</button>
-                            <button type="button" class="cancel hover">Cancel</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="email">
-                    <div class="_email">
-                        <p class="account-labels ">Email</p>
-                        <p>example@example.com</p>
-                    </div>
-                </div>
-                <div class="alert">
-                    <div class="_alert">
-                        <p class="account-labels">Alert / Notifications</p>
-                        <button type="button" class="edit_btn edit_">edit</button>
-                    </div>
-                    <div class="_alert_">
-                        <div class="checkboxes-alert">
-                            <label>
-                                <input type="checkbox" checked>
-                                I would like to receive alerts when my ads get published or expired
-                            </label>
-                            <label>
-                                <input type="checkbox" checked>
-                                I would like to receive alerts about new comments on my ads                   
-                            </label>
-                            <label>
-                                <input type="checkbox" checked>                                
-                                I would like to receive news and updates about Mourjan.com              
-                            </label>
-                        </div>
-                        <div class="btns_">
-                            <button type="button" class="hover">Save Changes</button>
-                            <button type="button" class="hover cancel">Cancel</button>
-                        </div>
-                    </div>
-                </div>
-            </form>
-            <div class="account-signins">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALkAAAC5AQMAAABOYwwfAAAABlBMVEX///8AAABVwtN+AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABXUlEQVRYhe2WMc6DMAyFjTowcoTchFwMiUi5GL1JjsCYAdV9dmhL+8+8f2g9oCQfgxW/Z0fkF18Yg6reZJI6YlUjdpUIksg4bIKTDSucMEHWOsoUpFsvBb9oYYNhC7ogtfofwBajzEoHXo+svWoufwt1MjAlDrkgIXw+JXoy2CPYvYT3s/PB7rziNuivKzRJBf1iNrCiINKhHqcDuVg94IBoZ25EIpgV3p+LdAD4bEIEuBKJ6yS93Ycu8syKAVAKXMRsZyhKhBErEYigHqZElKK/HbIiAHQfvbr+0ACaLIgAztMVDc904EpkgoSec2i+KTBBNiUiF7dBPNiAAbA1D3pq7anBBKFGq0c0L+jLBgzwUATGncvxfdydDJ6ztltt5mElRJDsddPE75oMTNAed+ZBH7ivK6GB3JQoNv3owBvPZDaAJYkgeePxWRvQgbfABLsSm/cPrwwG+MWXxR3V/jwz/f6eegAAAABJRU5ErkJggg==" alt="">
-                <button>
-                    <span class="apple"></span>
-                    <span class="up"></span>
-                        Scan To Merge Account
-                </button>
-            </div>
+        <div class="s-menu my-ads">
+            <div><a href="#" class="myads-active active">Active Ads</a></div>
+            <div><a href="#" class="myads-pending">Pending Ads</a></div>
+            <div><a href="#" class="myads-drafts">Drafts</a></div>
+            <div><a href="#" class="myads-archive">Archive</a></div>
+        </div>
+        <div class="buying-gold">
+            <div><a href="#">current balance <span>0 gold</span></a></div>
+            <div><a href="#" class="what-gold hover">What is mourjan Gold?</a></div>
+            <div><a href="#" class="buy-gold hover">Buy Gold</a></div>
         </div>
 
+        <div class="myads-contents">
+            <p>Active</p>
+            <div class="myads-create-btn">
+                <p>You Currently have no ads in Your Active</p>
+                <button class="hover">
+                    Create new Ad
+                </button>
+            </div>
+            <div class="myads-img">
+                <img src="./images/dna.webp" alt="">
+            </div>
+        </div>
 
     </main>
 
