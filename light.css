@@ -1727,11 +1727,20 @@ dl > dd > a
 }
 
 
+.mt-1
+{
+    margin-top: 10px;
+}
 .mt-4
 {
     margin-top: 40px;
 }
 
+.bt-1
+{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
 
 .text-danger
 {
@@ -1846,10 +1855,6 @@ dl > dd > a
     border-right: 1px solid var(--bg-new-light1);
 }
 
-.dash-menu
-{
-    
-}
 .dash-menu > ul
 {
     display: grid;
@@ -2815,6 +2820,181 @@ span.apple::after
     display: grid;
     grid-template-columns: repeat(2, auto);
     justify-content: space-around;
+}
+
+.new-ad-top-title
+{
+    background-color:rgb(233, 114, 114);
+    background-image:linear-gradient(to bottom,  rgba(133, 130, 130, 0.5),  #700, #700);
+    color: white;
+    padding: 10px;
+}
+
+.ad-buttons
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1px;
+    background-color: rgb(204, 204, 204);
+    padding: 0 1px 1px 1px;
+}
+.ad-buttons label
+{
+    display: block;
+    text-align: left;
+    padding: 10px;
+    border: none;
+    background-color: var(--bg-new-light);
+    box-sizing: border-box;
+    font-weight: 600;
+    font-size: 18px;
+    position: relative !important;
+}
+.first-ad-group .ad-buttons label, .third-ad-group label, .fourth-ad-group label, .sixth-ad-group label
+{
+    padding-left: 50px;
+}
+.third-ad-group label::before
+{
+    background-image: url('./images/realestate.webp');
+}
+.third-ad-group.my-car label::before
+{
+    background-image: url("./images/cars.webp");
+}
+.first-ad-group .ad-buttons label::before {
+    background-image: url(images/gen.webp);
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+.cur-ponter
+{
+    cursor: pointer;
+}
+.new-ad-post
+{
+    margin-bottom: 50px;
+}
+.fourth-ad-group label span, .fourth-ad-group label span::after
+{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+/* #_countries:checked ~ .fourth-ad-group label span
+{
+    display: none;
+} */
+.fourth-ad-group label span::after
+{
+    width: 15px;
+    height: 15px;
+    right: -2px;
+    content: ' ';
+}
+.fourth-ad-group label::before, .sixth-ad-group label::before
+{
+    left: 10px;
+    top: 12px;
+    width: 32px;
+    height: 23px;
+}
+.count-icons::before
+{
+    background-image: url('./images/all.webp');
+}
+
+.ad-post-title-desc
+{
+    background-color: #f8f8f8;
+    padding: 10px;
+    font-size: 18px;    
+    border-bottom: 1px dashed #143e14;
+}
+#ad-post-text-area
+{
+    resize: vertical;
+    height: 200px;
+}
+.post-ad-div
+{
+    display: grid;
+    background-color: #143e57;
+    grid-template-columns: 1fr;
+    padding: 1px;
+    
+}
+.post-ad-div form
+{
+    background-color: white;
+}
+.post-ad-div form .form-control
+{
+    padding: 20px 50px;
+}
+.post-ad-div form .form-control button
+{
+    /* width: 500px; */
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 2px outset #cacaca!important;
+    border-radius: 10px;
+    background-color: #dddddd;
+    background-image:linear-gradient(to bottom,  rgba(133, 130, 130, 0.5),  #888888, #888888);
+    color: white;
+    font-size: 18px;
+    box-shadow: 0 3px 3px #333;
+
+}
+.next-btn
+{
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 2px outset #cacaca!important;
+    border-radius: 10px;
+    background-color: #499131;
+    background-image:linear-gradient(to bottom,  rgba(236, 236, 236, 0.5),  #41B419, #41B419);
+    color: white;
+    font-size: 18px;
+    box-shadow: 0 3px 3px #333;
+    margin: 20px auto;
+}
+.jobs-inputs
+{
+    position: relative;
+}
+.jobs-inputs input
+{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9;
+}
+#_message:checked ~ .sixth-ad-group > div > div 
+{
+    display: none;
+}
+#_message:checked ~ .sixth-ad-group > div > .all-names
+{
+    font-weight: 600;
+    padding: 30px;
+    display: block;
 }
 /* //////////////////////////////////////////////////////// Comment */
 @media all and (max-width: 1650px)
