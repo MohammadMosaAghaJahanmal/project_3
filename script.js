@@ -300,3 +300,20 @@ function sendStateTo(perTitle, id) {
 }
 
 
+const menuBoxes = document.querySelectorAll(".menu input[type=checkbox]");
+
+
+if (menuBoxes.length > 0) {
+    for (const perBox of menuBoxes) {
+        perBox.onchange = (e) =>
+        {
+            for (const perb of menuBoxes) {
+                
+                if(perb.checked)
+                {
+                    perb.click();
+                }
+            }
+        }
+    }
+}
